@@ -1,0 +1,270 @@
+
+body
+{
+     background-color: rgb(0, 110, 255);
+}
+
+
+/* c'est pour modifier la taille de la 1ère image */
+#white
+{  
+    margin: auto;
+    width: 200px;
+    height: 250px;
+}
+
+/* pour modifier la place de la 1ère image */
+.container_1
+{
+    text-align: center;
+    margin-bottom: 9%;
+}
+
+/* c'est pour modifier la taille de la 1ère phrase de la 1ère page */
+#texte_1
+{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+/* c'est pour centrer la 1ère phrase de la 1ère page  */
+.container_2
+{
+    text-align: center;
+}
+
+
+/* la page 2 */
+
+/* c'est pour modifier la taille du 1er texte de la page 2 */
+
+#texte_one
+{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: -9%;
+}
+
+/* c'est Pour mettre en gras la 1ère ligne du 1er texte de la page 2 */
+#vacance_bold
+{ 
+    font-size: 28px;
+    text-align: center;
+}
+
+/* c'est Pour mettre en gras une partie de la 2ère ligne du 1er texte 
+de la page 2 */
+#printemps_bold
+{
+    font-size: 27px;
+}
+
+/* c'était avant margin-bottom: -4% ; */
+
+.container_texte_1
+{
+    margin-bottom: -4% ;
+}
+
+/* le bouton J'en Profite */
+#bouton_Profiter
+{ 
+    background-color:crimson;
+    color: white; 
+    width: 380px;
+    height: 50px;
+    border-radius: 50px;
+    left: 50px;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+
+
+/*c'est pour modifier la taille de l'icone du livre en blanc*/
+#logo_livre
+{
+     height: 40px;
+     width: 40px; 
+     position: absolute;
+     right:-115%
+}
+
+/* c'est pour Centrer Le Bouton*/ /* c'était avant top: 319%;
+    right: 575px; */
+.center_bouton 
+{
+    text-align: center; 
+    top: 95%;
+    right: 490px;
+    position: absolute;
+}
+
+/*c'est pour modifier la place de l'icone du livre en blanc dans le bouton*/
+#icone_move
+{
+        bottom: 90%;
+        right: 12%;
+        position: absolute;
+}
+
+/* c'est pour modifier l'image de l'icone de la maison*/
+#shop_icone_white
+{
+    width: 90px;
+    height: 150px;
+}
+
+/* c'est l'animation qui fait decendre la 1ère image de la 1ere page */
+.first-move
+{
+    animation-name: descend;
+    animation-duration: 1s;
+    animation-delay: 1s ;
+}
+
+@keyframes descend
+{
+    0%{ transform: translateY(-200px);}
+    10% { transform: translateY(-100px);}
+    25%{ transform: translateY(0px); }
+    50%{transform: translateY(5px); }
+    75%{transform: translateY(10px); }
+    100% {transform: translateY(15px);}
+}
+
+/* c'est l'animation qui fait monté l'icone 
+et la 1ere phrase du texte de la 1ère page */
+.container_2
+{
+    animation-name: monte;
+    animation-delay: 1s ;
+    animation-duration: 1s ;
+}
+
+@keyframes monte
+{
+    0%{transform: translateY(400px);}
+    50%{transform: translateY(250px);}
+    75%{transform: translateY(100px);}
+    100%{transform: translateY(30px);}
+}
+
+/* c'est l'animation qui fait rescendre la 1ère image 
+et l'icone ainsi la 1ere phrase du texte de la 1ère page */
+.cacher_1
+{
+    animation-name: redescend;
+    animation-delay: 3s ;
+    animation-duration: 2s ;
+    text-align: center;
+}
+
+@keyframes redescend 
+{
+    100% {transform: translateY(2000px);}
+}
+
+/* c'est l'animation qui fait monter l'image des arbres*/
+.container_arbre
+{
+    animation-name: monte_pour_arbre;
+    animation-delay: 1s ;
+    animation-duration: 1s ;
+}
+
+
+@keyframes monte_pour_arbre 
+{
+    0%{transform: translateY(400px);}
+    100%{transform: translateY(20px);}
+}
+
+/* c'est l'animation qui fait descendre la 1ère image 
+de la 2ème page */
+
+.two_gifi
+{
+    animation-name: descend_for_two_gifi ;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    text-align: center;
+}
+
+@keyframes descend_for_two_gifi
+{
+    0%{ transform: translateY(-200px);}
+    10% { transform: translateY(-100px);}
+    25%{ transform: translateY(0px); }
+    
+    50%{transform: translateY(5px); }
+    75%{transform: translateY(10px); }
+
+    100% {transform: translateY(15px);}
+}
+
+
+/* c'est l'animation qui fait monter le bouton*/
+.center_bouton
+{
+    animation-name: monte_pour_bouton;
+    animation-delay: 2s ;
+    animation-duration: 1s ;
+}
+
+@keyframes monte_pour_bouton
+{
+    0%{transform: translateY(400px);}
+    50% {transform: translateY(220px);}
+    100%{transform: translateY(20px);}
+}
+
+/* c'est l'animation qui fait la transition pour l'image Torche Solaire */
+.container_torche_solaire
+{
+    animation-name: transition_pour_torche_solaire;
+    animation-delay: 3s ;
+    animation-duration: 1s ;
+}
+
+@keyframes transition_pour_torche_solaire
+{
+    0%{transform: translateX(-400px);}
+    100%{transform: translateX(45px);}
+}
+
+
+
+/*pour modifier la taille de la 1ere image de la 2ème pages  */
+#white_2
+{
+    width: 100px;
+    height: 150px; 
+}
+
+
+/*pour modifier la taille de la torche solaire  */
+
+#torche_solaire
+{
+    width: 700px;
+    height: 350px; 
+    margin-left: 280px;
+    margin-bottom: -125px;;}
+        
+/*pour modifier la taille des arbres  */
+
+#arbre
+{
+    width: 1300px;
+    height: 290px;
+    margin-left: 5px;
+}
+
+
+
+ 
+
